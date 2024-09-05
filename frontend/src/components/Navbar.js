@@ -17,7 +17,7 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/">MoodU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto">
+                <Nav>
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                     {token && (
                         <>
