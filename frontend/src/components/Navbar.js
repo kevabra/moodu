@@ -17,14 +17,14 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/">MoodU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav className="ms-auto">
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                     {token && (
                         <>
                             <Nav.Link as={Link} to="/post-mood">Post Mood</Nav.Link>
                             <Nav.Link as={Link} to="/track-mood">Track Mood</Nav.Link>
                             <Nav.Link as={Link} to="/users">Users</Nav.Link>
-                            <Button variant="outline-primary" onClick={handleLogout}>Logout</Button>
+                            <Button className="ms-auto" variant="outline-primary" onClick={handleLogout}>Logout</Button>
                         </>
                     )}
                     {!token && (

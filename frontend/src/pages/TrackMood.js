@@ -33,7 +33,14 @@ const TrackMood = () => {
 
     return (
         <Container>
-            {error && <Alert variant="danger">{error}</Alert>}
+            {error && (
+                <>
+                <h2>Your Mood History</h2>
+                <Table striped bordered hover>
+                </Table>
+                <p>No mood history available.</p>
+                </>
+            )}
             {!error && (
                 <>
                     <h2>Your Mood History</h2>
