@@ -17,23 +17,25 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/">MoodU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav>
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+
                     {token && (
-                        <>
+                      <Nav className="ms-auto">
+                      <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/post-mood">Post Mood</Nav.Link>
                             <Nav.Link as={Link} to="/track-mood">Track Mood</Nav.Link>
                             <Nav.Link as={Link} to="/users">Users</Nav.Link>
-                            <Button variant="outline-primary" onClick={handleLogout}>Logout</Button>
-                        </>
+                            <Button className="ms-auto" variant="outline-primary" onClick={handleLogout}>Logout</Button>
+                      </Nav>
+                        
                     )}
                     {!token && (
-                        <>
+                      <Nav>
+                      <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
                             <Nav.Link as={Link} to="/register">Register</Nav.Link>
-                        </>
+                      </Nav>
                     )}
-                </Nav>
+                
             </Navbar.Collapse>
 
             {/* Offcanvas menu for mobile */}
