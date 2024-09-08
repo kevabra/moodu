@@ -24,6 +24,8 @@ const NavBar = () => {
                             <Nav.Link as={Link} to="/post-mood">Post Mood</Nav.Link>
                             <Nav.Link as={Link} to="/track-mood">Track Mood</Nav.Link>
                             <Nav.Link as={Link} to="/users">Users</Nav.Link>
+                            <Nav.Link as={Link} to="/friends">Friends</Nav.Link>
+                            <Nav.Link as={Link} to="/settings">Settings</Nav.Link>
                             <Button className="ms-auto" variant="outline-primary" onClick={handleLogout}>Logout</Button>
                       </Nav>
                         
@@ -51,6 +53,8 @@ const NavBar = () => {
                                 <Nav.Link as={Link} to="/post-mood">Post Mood</Nav.Link>
                                 <Nav.Link as={Link} to="/track-mood">Track Mood</Nav.Link>
                                 <Nav.Link as={Link} to="/users">Users</Nav.Link>
+                                <Nav.Link as={Link} to="/friends">Friends</Nav.Link>
+                                <Nav.Link as={Link} to="/settings">Settings</Nav.Link>
                                 <Button variant="outline-primary" onClick={handleLogout}>Logout</Button>
                             </>
                         )}

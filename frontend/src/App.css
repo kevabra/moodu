@@ -8,15 +8,24 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.settings-container {
+  max-width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .auth-form,
-.post-mood-form {
+.post-mood-form, .settings-container select {
   display: flex;
   flex-direction: column;
 }
 
 .auth-form input,
 .post-mood-form input,
-.post-mood-form textarea {
+.post-mood-form textarea,
+.settings-container select {
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;

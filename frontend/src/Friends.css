@@ -1,0 +1,76 @@
+.friends-page {
+  max-width: 600px;
+  margin: auto;
+}
+
+.friend-search {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friend-search input {
+  border-radius: 4px;
+}
+
+.matching-users {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+
+.matching-users .user-row {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.matching-users .user-row:hover {
+  background-color: #f0f0f0;
+}
+
+.pending-requests {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pending-requests .pending-request {
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pending-requests .pending-request:last-child {
+  border-bottom: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.pending-requests ul {
+  max-height: 25vh; /* Adjust height as necessary */
+  overflow-y: scroll;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pending-requests ul li {
+  padding: 10px;
+}
